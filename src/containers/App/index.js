@@ -6,7 +6,7 @@ import RepositoryPage from "../RepositoryPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="github-graphql-api">
       <Switch>
         <AppRoute exact path="/:owner?/:name?" component={RepositoryPage}/>
         <AppRoute component={NotfoundPage}/>
