@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/github-graphql-api/static/css/main.7265b016.chunk.css",
+    "main.js": "/github-graphql-api/static/js/main.fc154fce.chunk.js",
+    "main.js.map": "/github-graphql-api/static/js/main.fc154fce.chunk.js.map",
+    "runtime-main.js": "/github-graphql-api/static/js/runtime-main.6e4c36cc.js",
+    "runtime-main.js.map": "/github-graphql-api/static/js/runtime-main.6e4c36cc.js.map",
+    "static/css/2.45eb3147.chunk.css": "/github-graphql-api/static/css/2.45eb3147.chunk.css",
+    "static/js/2.79ff4e48.chunk.js": "/github-graphql-api/static/js/2.79ff4e48.chunk.js",
+    "static/js/2.79ff4e48.chunk.js.map": "/github-graphql-api/static/js/2.79ff4e48.chunk.js.map",
+    "index.html": "/github-graphql-api/index.html",
+    "precache-manifest.60d34d53d80c1bfdf44adc4ac190a7f8.js": "/github-graphql-api/precache-manifest.60d34d53d80c1bfdf44adc4ac190a7f8.js",
+    "service-worker.js": "/github-graphql-api/service-worker.js",
+    "static/css/2.45eb3147.chunk.css.map": "/github-graphql-api/static/css/2.45eb3147.chunk.css.map",
+    "static/css/main.7265b016.chunk.css.map": "/github-graphql-api/static/css/main.7265b016.chunk.css.map",
+    "static/js/2.79ff4e48.chunk.js.LICENSE.txt": "/github-graphql-api/static/js/2.79ff4e48.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/github-graphql-api/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e4c36cc.js",
+    "static/css/2.45eb3147.chunk.css",
+    "static/js/2.79ff4e48.chunk.js",
+    "static/css/main.7265b016.chunk.css",
+    "static/js/main.fc154fce.chunk.js"
+  ]
+}
