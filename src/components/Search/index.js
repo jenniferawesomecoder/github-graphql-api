@@ -16,7 +16,7 @@ function Search({owner = "", name = ""}) {
   }
 
   return (
-    <Form inline>
+    <Form inline onSubmit={() => history.replace(`/${state.owner}/${state.name}/`)}>
       <Form.Label srOnly>
         Owner
       </Form.Label>
@@ -40,8 +40,8 @@ function Search({owner = "", name = ""}) {
         data-testid="search-form-name-field-test-id"
       />
       <Button
+        type="submit"
         disabled={!state.owner || !state.name} className="mb-2"
-        onClick={() => history.replace(`/${state.owner}/${state.name}/`)}
         data-testid="search-form-submit-button-test-id"
       >
         Go

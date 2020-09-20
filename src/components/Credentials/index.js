@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Button, Form } from 'react-bootstrap';
 
 const Credentials = () => {
     const [github, setGithub] = useState('');
@@ -28,11 +29,29 @@ const Credentials = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input placeholder="Github Access Key" value={github} onChange={handleGithubChange} />
-            <input placeholder="Libraries Access Key" value={libraries} onChange={handleLibrariesChange}/>
-            <button type="submit">SET KEYS</button>
-        </form>
+        <Form inline onSubmit={handleSubmit}>
+            <Form.Control
+                type="text"
+                className="mb-2 mr-sm-2"
+                placeholder="Github Access Key"
+                value={github}
+                onChange={handleGithubChange}
+            />
+
+            <Form.Control
+                type="text"
+                className="mb-2 mr-sm-2"
+                placeholder="Libraries Access Key"
+                value={libraries}
+                onChange={handleLibrariesChange}
+            />
+            <Button
+                type="submit"
+                disabled={!github || !libraries} className="mb-2"
+            >
+                SET KEYS
+            </Button>
+        </Form>
     )
 }
 
