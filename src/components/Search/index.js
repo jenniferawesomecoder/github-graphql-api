@@ -6,6 +6,15 @@ function Search({owner = "", name = ""}) {
   const [state, setState] = useState({owner, name});
   let history = useHistory();
 
+  const githubKeys = localStorage.getItem('github-access-key');
+  const librariesKeys = localStorage.getItem('libraries-access-key');
+
+  if (!githubKeys || !librariesKeys) {
+    return (
+      <em className="white-color">Please Provide the Keys</em>
+    )
+  }
+
   return (
     <Form inline>
       <Form.Label srOnly>

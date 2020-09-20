@@ -6,7 +6,8 @@ import Loading from "../../components/Loading";
 import Repo from "./Repo";
 import Dependencies from "./Dependencies";
 import Vulnerability from "./Vulnerability";
-import { LIBRARIES_ACCESS_KEY } from "../App/constants";
+
+const LIBRARIES_ACCESS_KEY = localStorage.getItem('libraries-access-key');
 
 function RepositoryPage(props) {
   const { owner = "", name = "" } = props.match.params;

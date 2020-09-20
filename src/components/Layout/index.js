@@ -1,6 +1,7 @@
 import React from "react";
 import { Breadcrumb, Nav, Navbar } from "react-bootstrap";
 import Search from "../Search";
+import Credentials from '../Credentials';
 
 function Layout({ children, ...rest }) {
   const { owner, name } = rest.match.params;
@@ -8,8 +9,10 @@ function Layout({ children, ...rest }) {
   return (
     <>
       <Navbar bg="dark" variant="dark" data-testid="layout-navbar-test-id">
-        <Navbar.Brand>Github clone</Navbar.Brand>
-        <Nav className="mr-auto"></Nav>
+        <Navbar.Brand>Github GraphQL</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Credentials />
+        </Nav>
         <Search owner={owner} name={name} />
       </Navbar>
       <div className="bg-light ">
